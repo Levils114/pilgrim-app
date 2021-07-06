@@ -79,12 +79,6 @@ export default function Product({route}: IProduct){
                             </ProductDataContent>
 
                             <ProductDataContent>
-                                <IoniconsIcon name="person-outline" size={18} color={colors.white}/>
-
-                                <ProductDataLabel>{product.author}</ProductDataLabel>
-                            </ProductDataContent>
-
-                            <ProductDataContent>
                                 <IoniconsIcon name="book-outline" size={18} color={colors.white}/>
 
                                 <ProductDataLabel>{product.publisher}</ProductDataLabel>

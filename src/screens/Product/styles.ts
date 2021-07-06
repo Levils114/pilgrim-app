@@ -28,7 +28,7 @@ export const Title = styled.Text`
 
 export const ProductDataContainer = styled.View`
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-around;
 
     flex-direction: row;
 
