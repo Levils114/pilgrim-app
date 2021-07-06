@@ -2,6 +2,8 @@ import { useNavigation } from '@react-navigation/native';
 import React, { useMemo } from 'react';
 import { TouchableOpacity, View } from 'react-native';
 
+import LinearGradient from 'react-native-linear-gradient';
+
 import {BookCard,
         BookAuthor,
         BookTitle} from './styles';
@@ -36,8 +38,16 @@ export default function AudioBookCard({ product }: IAudioBookCard){
                     borderRadius: 16,
                 }}
             >
-                <BookAuthor>{product.author}</BookAuthor>
-                <BookTitle>{formatTitle}</BookTitle>
+                <LinearGradient colors={['transparent', 'rgba(0, 0, 0, 0.5)']} style={{
+                    padding: 12,
+                    flex: 1,
+                    justifyContent: 'flex-end',
+                    borderBottomLeftRadius: 16,
+                    borderBottomRightRadius: 16,
+                }}>
+                    <BookAuthor>{product.author}</BookAuthor>
+                    <BookTitle>{formatTitle}</BookTitle>
+                </LinearGradient>
             </BookCard>
         </TouchableOpacity>
     );

@@ -1,16 +1,19 @@
 import React from 'react';
 import {
-   SafeAreaView,
+   View,
    StatusBar,
  } from 'react-native';
+import Hooks from './src/hooks';
 import Routes from './src/routes/routes';
 
  const App = () => {
    return (
-     <SafeAreaView style={{ flex: 1 }}>
-       <StatusBar barStyle='dark-content' backgroundColor="#f2f2f2"/>
-       <Routes />
-     </SafeAreaView>
+     <View style={{ flex: 1 }}>
+       <StatusBar translucent barStyle='dark-content' backgroundColor="transparent"/>
+       <Hooks>
+          <Routes />
+       </Hooks>
+     </View>
    );
  };
 

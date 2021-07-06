@@ -46,7 +46,7 @@ export default function Home(){
     }, []);
 
     return(
-        <Content>
+        <Content showsVerticalScrollIndicator={false}>
             <Header />
 
             <WelcomeText>Bem vindo ao The Pilgrim</WelcomeText>
