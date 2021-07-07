@@ -4,53 +4,53 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import colors from '../../utils/colors';
 
-interface ICategoryText{
-    title: string;
+interface ICategoryText {
+  title: string;
 }
 
-export const Content = styled.ScrollView`
-`;
-
 export const WelcomeText = styled.Text`
-    font-size: 14px;
-    font-weight: 500;
+  font-size: 14px;
+  font-weight: 500;
 
-    color: ${colors.gray_light};
+  color: ${colors.gray_light};
 
-    margin-top: 24px;
+  margin-top: 24px;
 
-    padding-left: 24px;
+  padding-left: 24px;
 `;
 
 export const Title = styled.Text`
-    font-size: 32px;
-    font-weight: bold;
+  font-size: 32px;
+  font-weight: bold;
 
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 
-    padding: 0 24px;
+  padding: 0 24px;
+
+  width: 80%;
 `;
 
 export const CategoryContainer = styled.View`
-    align-items: center;
-    justify-content: flex-start;
+  align-items: center;
+  justify-content: flex-start;
 
-    flex-direction: row;
+  flex-direction: row;
 `;
 
 export const CrownIcon = styled(Icon)`
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 
-    margin-left: 8px;
+  margin-left: 8px;
 `;
 
 export const CategoryText = styled.Text<ICategoryText>`
-    color: ${props => props.title === 'Pilgrim Books' ? colors.primary : colors.gray_dark};
+  color: ${props =>
+    props.title === 'Pilgrim Books' ? colors.primary : colors.gray_dark};
 
-    font-size: 18px;
-    font-weight: bold;
+  font-size: 18px;
+  font-weight: bold;
 
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 
-    padding-left: 24px;
+  padding-left: 24px;
 `;

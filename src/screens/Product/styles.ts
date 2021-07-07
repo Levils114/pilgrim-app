@@ -1,77 +1,65 @@
-import styled from "styled-components/native";
+import styled from 'styled-components/native';
 
-import colors from "../../utils/colors";
+import colors from '../../utils/colors';
 
 export const Content = styled.ScrollView`
-    background-color: #000;
+  background-color: #000;
 
-    position: relative;
+  position: relative;
 `;
 
 export const Author = styled.Text`
-    color: ${colors.white};
+  color: ${colors.white};
 
-    font-size: 16px;
-    font-weight: 400;
+  font-size: 16px;
+  font-weight: 400;
 
-    margin-top: auto;
+  margin-top: auto;
 `;
 
 export const Title = styled.Text`
-    color: ${colors.white};
+  color: ${colors.white};
 
-    font-size: 35px;
-    font-weight: 700;
+  font-size: 35px;
+  font-weight: 700;
 
-    margin: 8px 0 16px;
+  margin: 8px 0 16px;
 `;
 
 export const ProductDataContainer = styled.View`
-    align-items: flex-start;
-    justify-content: space-around;
+  align-items: flex-start;
+  justify-content: space-around;
 
-    flex-direction: row;
+  flex-direction: row;
 
-    width: 100%;
+  width: 100%;
 `;
 
 export const ProductDataContent = styled.View`
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 
-    flex-direction: column;
+  flex-direction: column;
 
-    width: 20%;
+  width: 20%;
 `;
 
 export const ProductDataLabel = styled.Text`
-    color: ${colors.white};
+  color: ${colors.white};
 
-    font-size: 12px;
-    font-weight: 400;
+  font-size: 12px;
+  font-weight: 400;
 
-    margin-top: 8px;
+  margin-top: 8px;
 
-    text-align: center;
+  text-align: center;
 `;
 
 export const Description = styled.Text`
-    color: ${colors.white};
+  color: ${colors.white};
 
-    font-size: 14px;
-    font-weight: 400;
+  font-size: 14px;
+  font-weight: 400;
 
-    margin: 24px 0 0;
-`;
-
-export const AddCartButton = styled.TouchableOpacity`
-    align-self: center;
-
-    width: 60%;
-
-    padding: 8px 0;
-
-    background-color: ${colors.primary};
-
-    border-radius: 8px;
+  margin: 24px 0 0;
 `;
