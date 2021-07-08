@@ -18,22 +18,17 @@ import LinearGradient from 'react-native-linear-gradient';
 
 import HeaderToProductScreen from './../../components/HeaderToProductScreen';
 
-interface IProduct {
+import { IProduct } from './../../@types/product';
+
+interface IParams {
   route: {
     params: {
-      product: {
-        id: number;
-        title: string;
-        cover_path: string;
-        author: string;
-        publisher: string;
-        format_type: string;
-      };
+      product: IProduct;
     };
   };
 }
 
-export default function Product({route}: IProduct) {
+export default function Product({route}: IParams) {
   const {product} = route.params;
 
   return (
