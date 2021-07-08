@@ -66,7 +66,7 @@ export default function Home() {
         </>
       }
       renderItem={({item}) => (
-        <View key={item.id}>
+        <View>
           <CategoryText title={item.title}>{item.title}</CategoryText>
           <AudioBookContainer category={item} />
         </View>

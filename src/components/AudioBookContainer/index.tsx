@@ -17,7 +17,7 @@ export default function AudioBookContainer({category}: IAudioBookContainer) {
       showsHorizontalScrollIndicator={false}
       data={category.products}
       keyExtractor={item => item.id.toString()}
-      renderItem={({item}) => <AudioBookCard key={item.id} product={item} />}
+      renderItem={({item}) => <AudioBookCard product={item} />}
     />
   );
 }
